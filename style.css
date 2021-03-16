@@ -1,0 +1,29 @@
+body {
+	background: #edeff2;
+	font-family: roboto;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.graphContainer {
+	border-radius: 2px; 
+	background: #fff;
+	max-width: 1200px;
+	margin: 30px auto;
+	position: relative;
+	
+	#header {
+		border-bottom: 1px solid #eee;
+		padding: 6px 30px;
+		
+	}
+	
+	#Price {
+		border-radius: 2px; 
+		position: relative;
+	}
+	
+}
