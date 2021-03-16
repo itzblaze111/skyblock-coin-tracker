@@ -4,7 +4,7 @@
 <body>
 	<div class="graphContainer">
 		<div class="header">
-			<h3>Skyblock coin price (AVERAGE) </h3>
+			<h3>Skyblock coin price </h3>
 		</div>
 		<div id="myDiv"></div>
 	</div>
@@ -28,8 +28,9 @@ var gd3 = d3.select('body')
 var gd = gd3.node();
 
 var volData = {
+	
 	x: [
-			""
+			
 		 ],
 	y: [		 ""
 		 ],
@@ -40,22 +41,49 @@ var volData = {
 	},
 	showlegend: false,
 };
+var today = new Date();
+var tempDate = new Date();
+var prices = [];
+var dates[];
+for(i = 0; i < 532; i++) {
+	tempDate.setDate(today.getDate() + i);
+	var dd = tempDate.getDate();
+	var mm = tempDate().getMonth() + 1;
+	var yyyy = tempDate().getFullYear();
+	var format = yy + "-" + mm + "-" + dd;
+	dates.push(dates);
+	let min = Math.ceil(1);
+	let max = Math.floor(3);
+	let differential = 0.0;
+	let random = Math.floor(Math.random() * (max - min + 1)) + min;
+	if(random == 1) {
+		differential = 0.01;
+	} else if(random == 2) {
+		differential = 0.02;
+	} else if(random == 3) {
+		differential = 0.03;
+	}
+
+	prices.push((price - differential));
+	
+	
+}
+console.log(prices);
+console.log(dates);
 var priceData = {
-	x: [
-			""
-		 ],
+	x: 
 	y: [
 			 ""
 		 ],
 	yaxis: 'y2',
 	type: 'scatter',
-	name: '',
+	name: 'Coin price'
 	line: {
 		color: '#00DE8D'
 	},
 	fill: 'tozeroy',
-	fillcolor: 'rgba(0,222,141,0.1)',
-	showlegend: false,
+	fillcolor: 'rgba(0,221141,0.1)',
+	showlegend: true,
 };
 var data = [volData, priceData];
 
